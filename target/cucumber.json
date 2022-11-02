@@ -1,0 +1,266 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-02T09:20:39.346Z",
+        "line": 3,
+        "name": "Check login with valid credentials",
+        "description": "",
+        "id": "demo-functinality;check-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.ArithmeticException: / by zero\r\n\tat runner.login.user_calculate(login.java:11)\r\n\tat ✽.user calculate 1/0(file:///C:/Work/Automation/Gherkin%20Automation/Automation%20BDD%20Cucumber/cucumber-demo-cmd/src/test/resources/demo.feature:4)\r\n",
+              "duration": 11000000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "user calculate 1/0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                },
+                {
+                  "val": "0",
+                  "offset": 17
+                }
+              ],
+              "location": "runner.login.user_calculate(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user enters valid username and password",
+            "match": {
+              "location": "runner.login.user_enters_valid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "clicks on login button",
+            "match": {
+              "location": "runner.login.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user is navigated to the home page",
+            "match": {
+              "location": "runner.login.user_is_navigated_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-02T09:20:39.618Z",
+        "line": 9,
+        "name": "Check login with invalid credentials",
+        "description": "",
+        "id": "demo-functinality;check-login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on login page",
+            "match": {
+              "location": "runner.login.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters valid username and password",
+            "match": {
+              "location": "runner.login.user_enters_valid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clicks on login button",
+            "match": {
+              "location": "runner.login.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "error message is dispalyed - Invalid credentials",
+            "match": {
+              "location": "runner.login.error_message_is_dispalyed_invalid_credentials()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "demo functinality",
+    "description": "",
+    "id": "demo-functinality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/demo.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-02T09:20:39.657Z",
+        "line": 3,
+        "name": "Check login with valid credentials",
+        "description": "",
+        "id": "login-functinality;check-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on login page",
+            "match": {
+              "location": "runner.login.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters valid username and password",
+            "match": {
+              "location": "runner.login.user_enters_valid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "clicks on login button",
+            "match": {
+              "location": "runner.login.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is navigated to the home page",
+            "match": {
+              "location": "runner.login.user_is_navigated_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-02T09:20:39.690Z",
+        "line": 9,
+        "name": "Check login with invalid credentials",
+        "description": "",
+        "id": "login-functinality;check-login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on login page",
+            "match": {
+              "location": "runner.login.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters valid username and password",
+            "match": {
+              "location": "runner.login.user_enters_valid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clicks on login button",
+            "match": {
+              "location": "runner.login.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "error message is dispalyed - Invalid credentials",
+            "match": {
+              "location": "runner.login.error_message_is_dispalyed_invalid_credentials()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "login functinality",
+    "description": "",
+    "id": "login-functinality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/login.feature",
+    "tags": []
+  }
+]
